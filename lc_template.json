@@ -1,0 +1,27 @@
+{
+
+            "UserData": "", 
+            "EbsOptimized": false, 
+            "InstanceMonitoring": {
+                "Enabled": false
+            }, 
+            "BlockDeviceMappings": [
+                {
+                    "DeviceName": "/dev/sda1", 
+                    "Ebs": {
+                        "DeleteOnTermination": true, 
+                        "SnapshotId": "snap-00762b50998e9113b", 
+                        "VolumeSize": 8, 
+                        "VolumeType": "gp2"
+                    }
+                }
+            ], 
+            "KeyName": "Kishor", 
+            "SecurityGroups": [
+                "sg-5962a426"
+            ], 
+            "ImageId": "ami-f4cc1de2", 
+            "InstanceType": "t2.micro"
+
+        }
+
