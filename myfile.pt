@@ -3,7 +3,8 @@
     "aws_access_key": "",
     "aws_secret_key": "",
     "aws_ami_ID": "",
-    "ami_regions":""
+    "aws_ami_regions":""
+    "aws_ami_users":""
   },
   "builders": [{
     "type": "amazon-ebs",
@@ -14,7 +15,8 @@
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu",
     "ami_name": "Ubuntu-vim {{timestamp}}",
-    "ami_regions": "{{ user `ami_regions` }}"
+    "ami_regions": "{{ user `aws_ami_region` }}"
+    "ami_users": "{{ user `aws_ami_users` }}"
   }],
  
  "provisioners": [{
