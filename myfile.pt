@@ -3,7 +3,6 @@
     "aws_access_key": "",
     "aws_secret_key": "",
     "aws_ami_ID": "",
-    "aws_ami_regions":"",
     "aws_ami_users":""
   },
   "builders": [{
@@ -15,7 +14,7 @@
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu",
     "ami_name": "Ubuntu-vim {{timestamp}}",
-    "ami_regions": "{{ user `aws_ami_region` }}",
+    "ami_regions": "Test",
     "ami_users": "{{ user `aws_ami_users` }}"
   }],
  
