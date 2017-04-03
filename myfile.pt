@@ -15,7 +15,7 @@
     "ssh_username": "ubuntu",
     "ami_name": "Ubuntu-vim {{timestamp}}",
     "ami_regions": "Test",
-    "ami_users": "Test"
+    "ami_users": "{{user `aws_ami_users`}}"
   }],
  
  "provisioners": [{
